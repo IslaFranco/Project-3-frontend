@@ -1,4 +1,12 @@
+import { Link } from 'react-router-dom';
+
 function StoneHeader(props) {
-    return <h1>Stone Header Component</h1>
+    return (
+        <nav className="nav">
+            <Link to="/">
+               <div>Blooming Stones</div>
+            </Link>
+        </nav>
+    )
 }
 export default StoneHeader;
