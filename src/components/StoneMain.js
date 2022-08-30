@@ -25,7 +25,7 @@ function StoneMain(props) {
     return (
     <main>
         <Routes>
-           <Route path="/" element={<StoneIndex stone={stone} />} />
+           <Route path="/stones" element={<StoneIndex stone={stone} />} />
            <Route path="/stones/:id" element={<StoneShow />} />
         </Routes>
     </main>

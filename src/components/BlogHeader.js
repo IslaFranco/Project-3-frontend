@@ -1,4 +1,4 @@
 function BlogHeader(props) {
-    return <h1>Blog Header Component</h1>
+    return <h1>Welcome to the Blog page!</h1>
 }
 export default BlogHeader;
