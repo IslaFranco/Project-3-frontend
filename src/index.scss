@@ -7,7 +7,39 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+//variables
+$maincolor: rgb(226, 177, 161);
+$contrastcolor: black;
+
+//mixins
+@mixin black-text-pink-bg {
+  color: $contrastcolor;
+  background-color: $maincolor;
+}
+
+@mixin pink-text-black-bg {
+  color: $maincolor;
+  background-color: $contrastcolor;
+}
+
+// stones header(blooming stones) header component styles
+.nav {
+  @include black-text-pink-bg;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  @include black-text-pink-bg;
+  text-decoration: none;
+  div {
+    margin: 10px;
+    font-size: large;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    justify-self: flex-start;
+  }
 }
