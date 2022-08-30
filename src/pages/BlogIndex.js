@@ -9,8 +9,8 @@ function BlogIndex(props) {
                 <div className="blog" key={_id}>
                     <Link to={`/blogs/$_id`}>
                         <h1>{name}</h1>
-                        <img src={img} alt={name} />
-                        <h3>{description}</h3>
+                        {/* <img src={img} alt={name} />
+                        <h3>{description}</h3> */}
                     </Link>
                 </div>
             )

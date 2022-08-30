@@ -8,10 +8,10 @@ function ChakraIndex(props) {
                 <div className="chakra" key={_id}>
                     <Link to={`/chakras/${_id}`}>
                         <h2>{name}</h2>
-                        <h2>{chakra}</h2>
+                        {/* <h2>{chakra}</h2>
                         <h2>{originChakra}</h2>
                         <h3>{description}</h3>
-                        <img src={img} alt={name} />
+                        <img src={img} alt={name} /> */}
                     </Link>
                 </div>
             )

@@ -18,6 +18,21 @@ function StoneMain(props) {
         }
     };
 
+    const createStone = async (stone) => {
+        try {
+             await fetch(API_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'Application/json'
+                },
+                body: JSON.stringify(stone)
+            });
+            getStone(); //updated version once they create a new stone
+        } catch (error) {
+            //to do
+        }
+    }
+
     useEffect(() => {
         getStone();
     }, [])
@@ -25,7 +40,7 @@ function StoneMain(props) {
     return (
     <main>
         <Routes>
-           <Route path="/stones" element={<StoneIndex stone={stone} />} />
+           <Route path="/stones" element={<StoneIndex stone={stone} createStone={createStone} />} />
            <Route path="/stones/:id" element={<StoneShow />} />
         </Routes>
     </main>

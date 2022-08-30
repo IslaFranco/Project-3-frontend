@@ -9,9 +9,9 @@ function StoneIndex(props) {
                     <Link to={`/stones/{$_id}`}>
                        <h1>{name}</h1>
                     </Link>
-                    <img src={img} alt={name} />
+                    {/* <img src={img} alt={name} />
                     <h3>{description}</h3>
-                    <h3>{color}</h3>
+                    <h3>{color}</h3> */}
                 </div>
             )
         })
