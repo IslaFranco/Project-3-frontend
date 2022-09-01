@@ -5,15 +5,15 @@ import StoneIndex from "./pages/StoneIndex";
 import StoneShow from "./pages/StoneShow";
 
 function App() {
-  const [ stone, setStone ] = useState(null)
+  const [ stones, setStones ] = useState(null)
 
   const API_URL = 'http://localhost:3001/stones';
 
-  const getStone = async () => {
+  const getStones = async () => {
       try {
           const response = await fetch(API_URL);
           const data = await response.json();
-          setStone(data);
+          setStones(data);
       } catch (error) {
           // to do: add logic or task
       }
@@ -29,14 +29,25 @@ function App() {
               },
               body: JSON.stringify(stone)
           });
-          getStone(); //updated version once they create a new stone
+          getStones(); //updated version once they create a new stone
       } catch (error) {
           //to do
       }
   }
 
+  const deleteStone = async (id) => {
+    try {
+      await fetch(`${API_URL}/${id}`, {
+        method: 'DELETE'
+      });
+      getStones();
+    } catch (error) {
+      // to do 
+    }
+  }
+
   useEffect(() => {
-      getStone();
+      getStones();
   }, [])
 
 
@@ -44,10 +55,20 @@ function App() {
   return (
     <>
       <div className="App">
-        <Routes>
-          <Route path="/stones" element={<StoneIndex stone={stone} createStone={createStone} />} />
-          <Route path="/stones/:id" element={<StoneShow />} />
-        </Routes>
+          <Routes>
+            <Route 
+              path="/" 
+              element={
+                <StoneIndex 
+                    stones={stones} 
+                    createStone={createStone} />} />
+            <Route 
+                path="/:id" 
+                element={
+                  <StoneShow 
+                      stones={stones}
+                      deleteStone={deleteStone} />} />
+          </Routes>
       </div>
     </>
   );

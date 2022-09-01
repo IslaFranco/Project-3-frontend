@@ -38,6 +38,12 @@ a {
   }
 }
 
+.stone-images {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
 @media (min-width: 768px) {
   .nav {
     justify-self: flex-start;

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import StoneHeader from "../components/StoneHeader";
 
-function StoneIndex({ stone, createStone }) {
+function StoneIndex({ stones, createStone }) {
 
     const [ newForm, setNewForm ] = useState({
         name: "",
@@ -13,10 +13,10 @@ function StoneIndex({ stone, createStone }) {
     })
 
     const loaded = () => {
-        return stone.map(({ name, _id })=> {
+        return stones.map(({ name, _id })=> {
             return (
                 <div className="stone" key={_id}>
-                    <Link to={`/stones/{$_id}`}>
+                    <Link to={`/${_id}`}>
                        <h1>{name}</h1>
                     </Link>
                     {/* <img src={img} alt={name} />
@@ -81,7 +81,7 @@ function StoneIndex({ stone, createStone }) {
                 <input type="submit" value="Add stone!" />
 
             </form>
-                {stone ? loaded() : loading()}
+                {stones ? loaded() : loading()}
         </section>
         </div>
         )
