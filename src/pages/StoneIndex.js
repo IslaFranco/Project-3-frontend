@@ -13,15 +13,15 @@ function StoneIndex({ stones, createStone }) {
     })
 
     const loaded = () => {
-        return stones.map(({ name, _id })=> {
+        return stones.map(({ name, img, _id })=> {
             return (
-                <div className="stone" key={_id}>
+                <div className="stone-link" key={_id}>
                     <Link to={`/${_id}`}>
-                       <h1>{name}</h1>
+                       <h1 className="stone-link">{name}</h1>
                     </Link>
-                    {/* <img src={img} alt={name} />
-                    <h3>{description}</h3>
-                    <h3>{color}</h3> */}
+                    {/* { <img className="stone-images" src={img} alt={name} /> } */}
+                    {/* <h3>{description}</h3>
+                    // <h3>{color}</h3> */}
                 </div>
             )
         })
@@ -49,7 +49,7 @@ function StoneIndex({ stones, createStone }) {
             <StoneHeader />
         <section>
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="create-stone">
                 <input 
                     type="text" 
                     value={newForm.name}

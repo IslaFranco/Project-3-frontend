@@ -46,6 +46,22 @@ function App() {
     }
   }
 
+  const updateStone = async (id, updatedStone) => {
+    try {
+        await fetch (`${API_URL}/${id}`, {
+            method: 'PUT',
+            headers: {
+                'Content-type': 'Application/json'
+            },
+            body: JSON.stringify(updatedStone)
+        });
+
+        getStones();
+    } catch (error) {
+        //todo
+    }
+}
+
   useEffect(() => {
       getStones();
   }, [])
@@ -61,13 +77,16 @@ function App() {
               element={
                 <StoneIndex 
                     stones={stones} 
-                    createStone={createStone} />} />
+                    createStone={createStone}
+                     />} />
             <Route 
                 path="/:id" 
                 element={
                   <StoneShow 
                       stones={stones}
-                      deleteStone={deleteStone} />} />
+                      deleteStone={deleteStone} 
+                      updateStone={updateStone} />}
+                       />
           </Routes>
       </div>
     </>

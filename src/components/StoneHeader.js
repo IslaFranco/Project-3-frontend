@@ -4,7 +4,7 @@ function StoneHeader(props) {
     return (
         <nav className="nav">
             <Link to="/">
-               <div>Blooming Stones</div>
+               <div className="header">Blooming Stones</div>
             </Link>
         </nav>
     )
