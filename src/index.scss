@@ -29,6 +29,11 @@ $contrastcolor: black;
   display: flex;
   justify-content: center;
   font-family: 'Bodoni Moda', serif;
+  transition: transform .6s;
+}
+
+.nav:hover {
+  transform: scale(1.2);
 }
 
 .header {
@@ -86,8 +91,49 @@ a {
   color: black;
   font-family: 'Bodoni Moda', serif;
 }
+  .delete-btn:hover, .goback-btn:hover {
+    background-color:rgb(214, 136, 116);
+    transition: 0.7s;
+}
 
+//fieldset
 .create-stone {
   font-family: 'Bodoni Moda', serif;
+  margin: 5em 5em 5em 5em;
+  padding: 1em;
+  border: solid 2px rgb(77, 65, 65);
+  border-radius: 6px;
+  min-width: 200px;
+  background-color: rgb(184, 201, 222);
+}
+
+.title {
+  font-size: 25px;
+  color: rgb(87, 82, 82);
+}
+
+// lable {
+//   display: list-item;
+//   // margin-top: 0;
+// }
+
+lable:first-of-type {
+  margin-top: 0;
+}
+input {
+  padding: .5em;
+  border: solid 1px #999
+}
+
+input[type="submit"] {
+  padding: .5em 1em;
+  border-radius: 6px;
+  background-color: rgb(176, 176, 223);
+  font-family:'Bodoni Moda', serif;
+  font-size: .8em;
+}
+input[type="submit"]:hover {
+  background-color: rgb(139, 139, 230);
+  transition: 0.7s;
 }
 

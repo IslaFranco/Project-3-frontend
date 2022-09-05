@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+## Blooming Stones
+ - An application for anyone interested in learning about crystals/gem stones. Users will be able to view different types of stones with a description of what it does and a picture. Users can add additional stones that they are interested in or are using, or deleting ones as well. This app is for users who are curious about how they may affect your day to day life for the better and to improve anything that is going on in your life. You may also read blogs about what certain stones are helpful for, and which stones help your 7 main chakra centers.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## User Stories
+- As a user, I want to be able to see different type of gem stones, the way they look, and its description so that I can be well informed.
 
-## Available Scripts
+- As a user, I want to be able to create a post of a new gem stone that isn't displayed yet, so I can share with other users.
 
-In the project directory, you can run:
+- As a user, I want to know what gem stone helps with each chakra, so that I can help heal myself and other people.
 
-### `npm start`
+- As a user I would like to read blogs about gem stones so that i could have even more information about how they could benefit your life.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- As a user, I want to be able to delete a gem stone if it has misinformation or its duplicated.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- As a user, I want to be able to create a post about a gem stone and give a description and a picture so that other users can be informed.
 
-### `npm test`
+- As a user, I want to be able to rate it 1-5 on how beneficial it can be to improving your overall health.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- As a user, I would like the app to be well styled like modern websites so that its easy for me to navigate through the app.
 
-### `npm run build`
+## Technology Used
+- MongoDB/Mongoose
+- Express
+- React
+- Node
+- CSS
+- JavaScript
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
+- [click here](https://islafranco412363.invisionapp.com/freehand/Untitled-sZgo1is5r) to see my Trello Board.
+- [click here]() to see the Blooming Stones site.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Unsolved Problems
+- 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Future Enhancments
+- Google Authentication
+- Log in and log out
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

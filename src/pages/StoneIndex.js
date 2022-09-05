@@ -50,6 +50,8 @@ function StoneIndex({ stones, createStone }) {
         <section>
 
             <form onSubmit={handleSubmit} className="create-stone">
+                <h1 className="title">Create A New Stone</h1>
+                <label for="name">Stone Name:</label>
                 <input 
                     type="text" 
                     value={newForm.name}
@@ -57,6 +59,7 @@ function StoneIndex({ stones, createStone }) {
                     name="name"
                     placeholder="Turquoise stone..."
                 />
+                <label for="img" name="img">Stone Image:</label>
                 <input 
                     type="text" 
                     value={newForm.img}
@@ -64,6 +67,7 @@ function StoneIndex({ stones, createStone }) {
                     name="img"
                     placeholder="https://your-image-url.png"
                 />
+                <lable for="description" name="description">Description of Stone:</lable>
                 <input 
                     type="text" 
                     value={newForm.description}
@@ -71,6 +75,7 @@ function StoneIndex({ stones, createStone }) {
                     name="description"
                     placeholder="This stone is great for..."
                 />
+                <lable for="color" name="color">Color of Stone:</lable>
                 <input 
                     type="text" 
                     value={newForm.color}
