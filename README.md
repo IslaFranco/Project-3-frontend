@@ -32,7 +32,7 @@
 
 ## Getting Started
 - [click here](https://trello.com/b/S9DVpx27/project-3) to see my Trello Board.
-- [click here]() to see the Blooming Stones site.
+- [click here](https://visionary-mousse-b44908.netlify.app/) to see the Blooming Stones site.
 
 ## Unsolved Problems
 - Blog and Chakra Pages
