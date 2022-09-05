@@ -26,14 +26,23 @@
 - CSS
 - JavaScript
 
+## Screenshots
+![wireframe screenshot](assets/Screen%20Shot%202022-09-05%20at%2011.05.22%20AM.png)
+![wireframe screenshot](assets/Screen%20Shot%202022-09-05%20at%2011.07.30%20AM.png)
+
 ## Getting Started
-- [click here](https://islafranco412363.invisionapp.com/freehand/Untitled-sZgo1is5r) to see my Trello Board.
+- [click here](https://trello.com/b/S9DVpx27/project-3) to see my Trello Board.
 - [click here]() to see the Blooming Stones site.
 
 ## Unsolved Problems
-- 
+- Blog and Chakra Pages
 
 ## Future Enhancments
 - Google Authentication
 - Log in and log out
+- Create a Blog page for users to read and create their own blogs.
+- Create a Chakra page so users can see what stone helps with the 7 main chakras.
+- Update Nav bar to show redirects.
+- Be able to have a rate 1-5 on how a stone has helped you.
+- Allow comments once logged in, so that other users can voice their opinion on the stone description or put their own.
 
